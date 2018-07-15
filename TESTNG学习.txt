@@ -1,0 +1,19 @@
+NEW-- module--maven--next--id(com.course.code/Chapter)
+项目重命名：new--refactor--rename--更改pom.xml的artifactId
+
+快捷输入：sout+tab（ctrl+j）
+
+@Test //最基本的注解
+@BeforeMethod //在方法之前运行的
+@AfterMethod //在方法之后运行的
+
+BeforeSuite这是在类之前运行的测试套件
+BeforeClass这是在类运行之前运行的方法
+BeforeMethod这是在测试方法之前运行的
+Test这是测试用例1
+AfterMethod这是在测试方法之后运行的
+BeforeMethod这是在测试方法之前运行的
+Test这是测试用例2
+AfterMethod这是在测试方法之后运行的
+AfterClass这是在类运行之后运行的方法
+AfterSuite这是在类之后运行的测试套件
