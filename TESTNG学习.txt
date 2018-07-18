@@ -17,3 +17,6 @@ Test这是测试用例2
 AfterMethod这是在测试方法之后运行的
 AfterClass这是在类运行之后运行的方法
 AfterSuite这是在类之后运行的测试套件
+
+顺序
+suit(测试套件)--class-method--test
