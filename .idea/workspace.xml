@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54251844-93e5-47b2-b167-2312d19c9619" name="Default" comment="" />
+    <list default="true" id="54251844-93e5-47b2-b167-2312d19c9619" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Chapter/target/classes/com/course/testng/BasicAnnotation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter/target/classes/com/course/testng/groups/GroupsOnClass1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter/target/classes/com/course/testng/groups/GroupsOnClass2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter/target/classes/com/course/testng/groups/GroupsOnClass3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter/target/classes/com/course/testng/groups/GroupsOnMethod.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter/target/classes/com/course/testng/ignoreTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter/target/classes/com/course/testng/suite/LoginTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter/target/classes/com/course/testng/suite/PayTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter/target/classes/com/course/testng/suite/SuiteConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter5/src/main/resources/groupsOnClass.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter5/src/main/resources/groupsOnClass.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/Chapter/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -89,7 +101,7 @@
         <entry file="file://$PROJECT_DIR$/Chapter5/src/main/java/com/course/testng/ignoreTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="16" />
+              <caret line="15" selection-start-line="15" selection-end-line="16" />
               <folding>
                 <element signature="e#89#90#0" expanded="true" />
                 <element signature="e#125#126#0" expanded="true" />
@@ -163,8 +175,8 @@
       <file leaf-file-name="groupsOnClass.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Chapter5/src/main/resources/groupsOnClass.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+            <state relative-caret-position="304">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -220,7 +232,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -545,17 +557,11 @@
       <workItem from="1531659362806" duration="6557000" />
       <workItem from="1531706528130" duration="1615000" />
       <workItem from="1531880804131" duration="6329000" />
-      <workItem from="1531921525505" duration="3666000" />
+      <workItem from="1531921525505" duration="3935000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GroupsOnMethod - 2018.07.18 at 22h 02m 45s.xml">
-      <configuration name="GroupsOnMethod" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="GroupsOnMethod - 2018.07.18 at 22h 03m 58s.xml">
-      <configuration name="GroupsOnMethod" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="GroupsOnMethod - 2018.07.18 at 22h 28m 23s.xml">
       <configuration name="GroupsOnMethod" configurationId="TestNG" />
     </history-entry>
@@ -580,13 +586,18 @@
     <history-entry file="D__github_AutoTest_Chapter5_src_main_resources_groupsOnClass_xml - 2018.07.18 at 22h 36m 41s.xml">
       <configuration name="D:/github/AutoTest/Chapter5/src/main/resources/groupsOnClass.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="D__github_AutoTest_Chapter5_src_main_resources_groupsOnClass_xml - 2018.07.18 at 22h 47m 47s.xml">
+      <configuration name="D:/github/AutoTest/Chapter5/src/main/resources/groupsOnClass.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__github_AutoTest_Chapter5_src_main_resources_groupsOnClass_xml - 2018.07.18 at 22h 49m 26s.xml">
+      <configuration name="D:/github/AutoTest/Chapter5/src/main/resources/groupsOnClass.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22748000" />
+    <option name="totallyTimeSpent" value="23017000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -992,7 +1003,7 @@
     <entry file="file://$PROJECT_DIR$/Chapter5/src/main/java/com/course/testng/ignoreTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="16" />
+          <caret line="15" selection-start-line="15" selection-end-line="16" />
           <folding>
             <element signature="e#89#90#0" expanded="true" />
             <element signature="e#125#126#0" expanded="true" />
@@ -1006,8 +1017,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter5/src/main/resources/groupsOnClass.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+        <state relative-caret-position="304">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
         </state>
       </provider>
     </entry>
