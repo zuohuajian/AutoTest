@@ -1,56 +1,56 @@
-git Ñ§Ï°
+git å­¦ä¹ 
 
-Éú³ÉkeyÃüÁî
-ssh-keygen -t rsa -C ¡°zlzsam@hotmail.com¡±
+ç”Ÿæˆkeyå‘½ä»¤
+ssh-keygen -t rsa -C â€œzlzsam@hotmail.comâ€
 
-¿ËÂ¡
+å…‹éš†
 git clone xxx
 
-²»±£Áôµ±Ç°´úÂë
+ä¸ä¿ç•™å½“å‰ä»£ç 
 git checkout ./
 
-À­×îĞÂµÄ´úÂë
+æ‹‰æœ€æ–°çš„ä»£ç 
 git pull
 
-²é¿´µ±Ç°×´Ì¬
+æŸ¥çœ‹å½“å‰çŠ¶æ€
 git status
 
-Ìá½»´úÂë
+æäº¤ä»£ç 
 git add test.txt
-git add .£¨¸üĞÂµÄËùÓĞÎÄ¼ş£©
-git commit -m ¡°Ôö¼Ó²âgigÊÔÎÄ¼ş¡±
+git add .ï¼ˆæ›´æ–°çš„æ‰€æœ‰æ–‡ä»¶ï¼‰
+git commit -m â€œå¢åŠ æµ‹gigè¯•æ–‡ä»¶â€
 git push
 
-ĞÂ½¨ÎÄ¼ş¼Ğ
+æ–°å»ºæ–‡ä»¶å¤¹
 mkdir github
 
-Ğ´ÈëÎÄ¼ş
+å†™å…¥æ–‡ä»¶
 vim test.txt
 
-´ò¿ªÎÄ¼şcd
+æ‰“å¼€æ–‡ä»¶cd
 cat test.txt
 
-²é¿´µ±Ç°·ÖÖ§
+æŸ¥çœ‹å½“å‰åˆ†æ”¯
 git branch
-²é¿´ËùÓĞ·ÖÖ§
+æŸ¥çœ‹æ‰€æœ‰åˆ†æ”¯
 git branch -a
-Ôö¼Ó·ÖÖ§
+å¢åŠ åˆ†æ”¯
 git checkout -b dev
-ÇĞ»»·ÖÖ§
+åˆ‡æ¢åˆ†æ”¯
 git checkout login
-É¾³ı±¾µØ·ÖÖ§
+åˆ é™¤æœ¬åœ°åˆ†æ”¯
 git branch -d dev
-É¾³ıÔ¶³Ì·ÖÖ§
+åˆ é™¤è¿œç¨‹åˆ†æ”¯
 git branch -a -d origin/dev
-git push origin :dev (É¾³ıµÄÍÆËÍµ½Ô¶³Ì£¬Ã°ºÅÇ°Ãæ±ØĞëÓĞ¿Õ¸ñ)
-ºÏ²¢·ÖÖ§
+git push origin :dev (åˆ é™¤çš„æ¨é€åˆ°è¿œç¨‹ï¼Œå†’å·å‰é¢å¿…é¡»æœ‰ç©ºæ ¼)
+åˆå¹¶åˆ†æ”¯
 git merge dev
 
-°æ±¾»ØÍË
-git reset --hard HEAD^£¨¶à»ØÍËÒ»¸ö°æ±¾ĞèÒª¶à¼ÓÒ»¸ö¡°¡±¡°^¡±£©
-git reset --hard HEAD~100(»ØÍË100¸ö°æ±¾)
-git reflog(²é¿´ÀúÊ·°æ±¾£¬µÚÒ»ÁĞÊÇ°æ±¾id)
-git reset --hard c3e105e£¨»ØÍËµ½Ö¸¶¨°æ±¾£¬ºóÃæµÄÊÇ°æ±¾id£©
+ç‰ˆæœ¬å›é€€
+git reset --hard HEAD^ï¼ˆå¤šå›é€€ä¸€ä¸ªç‰ˆæœ¬éœ€è¦å¤šåŠ ä¸€ä¸ªâ€œâ€â€œ^â€ï¼‰
+git reset --hard HEAD~100(å›é€€100ä¸ªç‰ˆæœ¬)
+git reflog(æŸ¥çœ‹å†å²ç‰ˆæœ¬ï¼Œç¬¬ä¸€åˆ—æ˜¯ç‰ˆæœ¬id)
+git reset --hard c3e105eï¼ˆå›é€€åˆ°æŒ‡å®šç‰ˆæœ¬ï¼Œåé¢çš„æ˜¯ç‰ˆæœ¬idï¼‰
 
 
 

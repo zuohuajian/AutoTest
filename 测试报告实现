@@ -1,0 +1,58 @@
+pom.xml文件配置：
+<dependencies>
+        <dependency>
+            <groupId>com.relevantcodes</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>2.41.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.vimalselvam</groupId>
+            <artifactId>testng-extentsreport</artifactId>
+            <version>1.3.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>3.0.6</version>
+        </dependency>
+    </dependencies>
+
+xml文件配置：
+<suite name="这是我自己的接口测试套件">
+
+    <test name ="这些是测试模块">
+        <classes >
+            <class name="com.tester.extend.demo.TestMethodsDemo">
+                <methods>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                    <include name="test3"/>
+                    <include name="logDemo"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+    <listeners>
+
+        <!--<listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"/>-->
+        <!--<listener class-name="com.tester.extend.demo.ExtentTestNGIReporterListenerOld"/>-->
+        <listener class-name="com.tester.extend.demo.ExtentTestNGIReporterListener"/>
+    </listeners>
+
+</suite>
+
+解决测试报告样式无法加载问题：
+1.ExtentTestNGIReporterListener源码拉到本地
+2.在init方法下加：
+// 设置静态文件的DNS
+//怎么样解决cdn.rawgit.com访问不了的情况
+htmlReporter.config().setResourceCDN(ResourceCDN.EXTENTREPORTS);
+
+添加断言：
+Assert.assertEquals(1,2);
+添加log日志：
+Reporter.log("这是我们自己写的日志");

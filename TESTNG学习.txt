@@ -1,22 +1,84 @@
 NEW-- module--maven--next--id(com.course.code/Chapter)
-��Ŀ��������new--refactor--rename--����pom.xml��artifactId
+项目重命名：new--refactor--rename--更改pom.xml的artifactId
 
-������룺sout+tab��ctrl+j��
+快捷输入：sout+tab（ctrl+j）
 
-@Test //�������ע��
-@BeforeMethod //�ڷ���֮ǰ���е�
-@AfterMethod //�ڷ���֮�����е�
+@Test //最基本的注解
 
-BeforeSuite��������֮ǰ���еĲ����׼�
-BeforeClass������������֮ǰ���еķ���
-BeforeMethod�����ڲ��Է���֮ǰ���е�
-Test���ǲ�������1
-AfterMethod�����ڲ��Է���֮�����е�
-BeforeMethod�����ڲ��Է���֮ǰ���е�
-Test���ǲ�������2
-AfterMethod�����ڲ��Է���֮�����е�
-AfterClass������������֮�����еķ���
-AfterSuite��������֮�����еĲ����׼�
+套件测试：
+BeforeSuite这是在类之前运行的测试套件
+BeforeClass这是在类运行之前运行的方法
+BeforeMethod这是在测试方法之前运行的
+Test这是测试用例1
+AfterMethod这是在测试方法之后运行的
+BeforeMethod这是在测试方法之前运行的
+Test这是测试用例2
+AfterMethod这是在测试方法之后运行的
+AfterClass这是在类运行之后运行的方法
+AfterSuite这是在类之后运行的测试套件
 
-˳��
-suit(�����׼�)--class-method--test
+顺序
+suit(测试套件)--class-method--test
+
+忽略测试：
+@Test(enabled = false)
+
+分组测试：
+在类里进行分组：
+@Test(groups = "server")
+@Test(groups = "client")
+@BeforeGroups("server") //在服务端组运行之前运行的方法
+@AfterGroups("server") //在服务端组运行之后运行的方法
+配置进行分组：
+@Test(groups = "stu") //在类上面
+@Test(groups = "teacher") //在类上面
+<groups>
+            <run>
+                <include name="teacher"/>
+            </run>
+</groups> //test下一级目录
+
+异常测试:
+@Test(expectedExceptions = RuntimeException.class)
+throw new RuntimeException(); //方法中抛出异常
+
+依赖测试：
+@Test(dependsOnMethods = {"test1"}) //test1为依赖的方法名
+
+参数化测试：
+xml文件参数化：
+@Test
+@Parameters({"name","age"})
+
+<parameter name ="name" value="zhangsan"/>
+<parameter name ="age" value="10"/> //传参，在classes下级
+
+DataProvider参数化：
+@Test(dataProvider = "methodData")
+@DataProvider(name = "methodData")
+
+public  Object[][] methodDataTest(Method method){ //有参有返回值传参
+
+多线程测试：
+注解：
+ @Test(invocationCount = 10 ,threadPoolSize = 3)
+    public void test(){
+        System.out.println(1);
+        System.out.printf("Thread Id: %s%n",Thread.currentThread().getId());
+
+    }
+    //invocationCount:数量，threadPoolSize：线程池；
+    //"Thread Id: %s%n",Thread.currentThread().getId():抛出线程ID
+
+xml文件实现：
+suite name ="mutil" parallel="classes" thread-count="2">
+//parallel执行级别
+<!--
+    tests级别：不同的test tag 下的用例可以在不同的线程下执行
+    相同的test tag下的用例只能在同一个线程中去执行
+    classes级别：相同的class tag下的用例在同一个线程中执行
+    不同的classes tag下的用例可以在不同的线程中执行
+    method级别：所有用例都可以在不同的线程下去执行
+    thread-count:代表了最大并发数
+    xml文件配置这种方式不能指定线程池，只有在方法上才可以指定线程池
+-->
