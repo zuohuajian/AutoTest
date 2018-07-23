@@ -28,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/Chapter.iml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
-              <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -142,6 +142,11 @@
             <path>
               <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -398,7 +403,7 @@
       <workItem from="1532352302115" duration="406000" />
       <workItem from="1532352768132" duration="143000" />
       <workItem from="1532352923119" duration="280000" />
-      <workItem from="1532353260138" duration="967000" />
+      <workItem from="1532353260138" duration="1611000" />
     </task>
     <servers />
   </component>
@@ -435,11 +440,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56991000" />
+    <option name="totallyTimeSpent" value="57635000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -780,7 +784,7 @@
     <entry file="file://$PROJECT_DIR$/Chapter.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
         </state>
       </provider>
     </entry>
