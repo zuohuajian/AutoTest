@@ -5,7 +5,8 @@
 "headers":{
                    "Content-Type":"text/html;charset=jbk"
                  }
-
+解决jmeter中乱码，在BeanShell PostProcessor中加：
+"Content-Type":"text/html;charset=jbk"
 格式：
 [
   {
