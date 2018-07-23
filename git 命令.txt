@@ -53,4 +53,14 @@ git reflog(查看历史版本，第一列是版本id)
 git reset --hard c3e105e（回退到指定版本，后面的是版本id）
 
 
+git无法推送问题解决：
+1.根据博客里面说的，打开cmd输入ping命令查看github.com的连接，确实是网站连接问题，至于什么本地DNS无法解析什么的本人也不懂
 
+
+2.找到C:\Windows\System32\drivers\etc\hosts，打开，建议使用notepad++打开，因为修改需要权限，notepad++可以方便的获取权限修改
+在末尾添加上下面这段文字，保存
+
+192.30.255.112  github.com git
+185.31.16.184 github.global.ssl.fastly.net
+
+3.再次在cmd中测试ping github.com，发现可以连接上了
