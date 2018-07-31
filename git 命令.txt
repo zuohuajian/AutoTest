@@ -46,6 +46,15 @@ git push origin :dev (删除的推送到远程，冒号前面必须有空格)
 合并分支
 git merge dev
 
+强制拉取代码覆盖本地的
+git fetch --all
+git reset --hard origin/master
+git pull
+
+强制推送代码覆盖到远程
+git push --force
+
+
 版本回退
 git reset --hard HEAD^（多回退一个版本需要多加一个“”“^”）
 git reset --hard HEAD~100(回退100个版本)
