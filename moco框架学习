@@ -10,12 +10,81 @@
 格式：
 [
   {
-    "description":"这是我们的第一个moco例子",
+    "description":"这是包括全部的get请求",
     "request":{
-      "uri":"/demo"
+      "uri":"/getAllDemo",
+      "method":"get",
+      "cookies":{
+        "login":"true"
+      },
+      "headers":{
+        "content-type":"application/json"
+      },
+      "queries":{
+        "name":"zuohuajian",
+        "age":"25"
+      }
     },
     "response":{
-      "text":"第一个moco框架demo",
+      "json":{
+        "zuohuajian":"success",
+        "enabled":"1"
+      },
+      "headers":{
+        "Content-Type":"text/html;charset=jbk"
+      }
+    }
+  },{
+  "description":"这是包括全部的post请求",
+  "request":{
+    "uri":"/postAllDemo",
+    "method":"post",
+    "cookies":{
+      "login":"true"
+    },
+    "headers":{
+      "content-type":"application/json"
+    },
+    "json":{
+      "name":"jinzhu",
+      "age":"24"
+    }
+  },
+  "response":{
+    "json":{
+      "jinzhu":"success",
+      "enabled":"2"
+    },
+    "headers":{
+      "Content-Type":"text/html;charset=jbk"
+    }
+  }
+}
+]
+
+重定向：
+[
+  {
+    "description":"重定向到百度",
+    "request":{
+      "uri":"/redirect"
+    },
+    "redirectTo":"http://www.baidu.com"
+  },
+  {
+    "description":"这是重定向到的请求",
+    "request":{
+      "uri":"/redirect/topath"
+    },
+    "redirectTo":"/redirect/new"
+  },
+  {
+    "description":"这是被重定向到的请求",
+    "request":{
+      "uri":"/redirect/new"
+    },
+    "response":{
+      "text":"重定向成功啦",
       "headers":{
         "Content-Type":"text/html;charset=jbk"
       }

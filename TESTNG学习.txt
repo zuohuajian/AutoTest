@@ -7,7 +7,7 @@ NEW-- module--maven--next--id(com.course.code/Chapter)
 
 套件测试：
 BeforeSuite这是在类之前运行的测试套件
-BeforeClass这是在类运行之前运行的方法
+BeforeClass这是在类运行之前运行的
 BeforeMethod这是在测试方法之前运行的
 Test这是测试用例1
 AfterMethod这是在测试方法之后运行的
