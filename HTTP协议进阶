@@ -19,3 +19,14 @@ Last-Modified:这个头告诉浏览器数据的最后修改时间
 Refresh:这个头用于控制浏览器的定时刷新
 Content-Disposition:这个头告诉浏览器需要以下载方式打开回送的数据
 Transfer-Encoding:这个头告诉浏览器数据是以分块形式回送的
+
+cookie与Session
+区别
+cookie在客户端的头信息中
+session在服务端存储、文件、数据库都可以
+一般来说session的验证需要cookie带一个字段来表示这个用户是哪一个session，所以当客户端禁用cookie时，session将失效
+
+cookie的总结
+cookie就是小一段文本信息
+cookie的格式为key:value;key:value
+cookie的值由服务端生成，客户端保存
