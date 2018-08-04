@@ -29,4 +29,4 @@ session在服务端存储、文件、数据库都可以
 cookie的总结
 cookie就是小一段文本信息
 cookie的格式为key:value;key:value
-cookie的值由服务端生成，客户端保存
+cookie的值由服务端生成，客户端保存111
