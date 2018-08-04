@@ -82,3 +82,5 @@ suite name ="mutil" parallel="classes" thread-count="2">
     thread-count:代表了最大并发数
     xml文件配置这种方式不能指定线程池，只有在方法上才可以指定线程池
 -->
+
+111
