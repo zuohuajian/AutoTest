@@ -1,5 +1,5 @@
 下载链接：http://repo1.maven.org/maven2/com/github/dreamhead/moco-runner/0.11.0/----moco-runner-0.11.0-standalone.jar
-启动命令：java -jar ./moco-runner-0.11.0-standalone.jar http -p 8888 -c startup1.json
+启动命令：java -jar ./moco-runner-0.11.0-standalone.jar http -p 8888 -c startupWithCookies.json
 请求链接：http://192.168.0.103:8888/demo
 解决浏览器打开乱码问题--response中加：
 "headers":{
