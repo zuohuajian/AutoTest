@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class MyhttpClient {
+public class  MyhttpClient {
 
     @Test(testName = "1")
     public void test1() throws IOException {
