@@ -33,7 +33,7 @@
       "cookies":{
         "login":"true"
       },
-      "json":{
+      "forms":{
         "name":"huhansan",
         "age":"18"
       }

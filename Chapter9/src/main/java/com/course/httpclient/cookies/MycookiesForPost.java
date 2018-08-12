@@ -3,12 +3,15 @@ package com.course.httpclient.cookies;
 import com.sun.security.ntlm.Client;
 import jdk.nashorn.internal.runtime.JSONFunctions;
 import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
 import org.apache.http.client.CookieStore;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.cookie.Cookie;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONObject;
 import org.testng.Assert;
@@ -17,9 +20,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
-import java.util.List;
-import java.util.Locale;
-import java.util.ResourceBundle;
+import java.util.*;
 
 public class MycookiesForPost {
     private String url;
@@ -70,14 +71,25 @@ public class MycookiesForPost {
         //声明一个方法，这个方法就是post方法
         HttpPost post = new HttpPost(testurl);
         //添加参数
-        JSONObject param = new JSONObject();
-        param.put("name","huhansan");
-        param.put("age","18");
+//        添加json参数
+//        JSONObject param = new JSONObject();
+//        param.put("name","huhansan");
+//        param.put("age","18");
+        //添加froms参数
+        List<NameValuePair> list = new LinkedList<>();
+        BasicNameValuePair param1 = new BasicNameValuePair("name", "huhansan");
+        BasicNameValuePair param2 = new BasicNameValuePair("age", "18");
+        list.add(param1);
+        list.add(param2);
+        UrlEncodedFormEntity entityParam = new UrlEncodedFormEntity(list, "UTF-8");
+        post.setEntity(entityParam);
+
+
         //设置请求头信息 设置header信息
         post.setHeader("content-type","application/json");
         //将参数信息添加到方法中
-        StringEntity entity = new StringEntity(param.toString(),"utf-8");
-        post.setEntity(entity);
+//        StringEntity entity = new StringEntity(param.toString(),"utf-8");
+//        post.setEntity(entity);
         //声明一个对象进行响应结果的存储
         String result;
         //设置cookies信息
