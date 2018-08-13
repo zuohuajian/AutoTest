@@ -1,11 +1,12 @@
 package hello;
 import org.springframework.boot.*;
-import org.springframework.boot.autoconfigure;
-import org.springframework.boot.stereotype.*;
-import org.springframework.boot.web.bind.anntation.*;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@EnabledAutoConfiguration
+@EnableAutoConfiguration
 public class SamplerController {
 
     @RequestMapping("/")
