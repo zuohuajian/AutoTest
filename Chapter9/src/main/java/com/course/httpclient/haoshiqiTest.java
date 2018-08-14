@@ -29,9 +29,8 @@ public class haoshiqiTest {
     @Test
     public void testCommonInitconfig() throws IOException {
         //拼接测试url
-        String testUrl;
-        ResourceBundle uri = ResourceBundle.getBundle("test.common.initconfig",Locale.CHINA);
-        testUrl = uri + url;
+        String uri = bundle.getString("test.common.initconfig");
+        String testUrl = this.url + uri;
         //定义存放的结果
         String result;
         //请求get接口
